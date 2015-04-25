@@ -89,6 +89,7 @@ _armaSN = "rhs_weap_XM2010_sa";
 
 // Silenciadors
 _armaSilenciador = "rhsusf_acc_rotex5_grey";
+_armaSilenciadorDM = "rhsusf_acc_SR25S";
 _armaSurefire = "rhsusf_acc_SF3P556";
 
 // Accessoris
@@ -696,7 +697,7 @@ for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_7x45acp_MHP";};
 player addBackpack _motxilla;
 player addItemToBackpack _visioNocturna;
 for "_i" from 1 to 4 do {player addItemToBackpack _benes;};
-player addItemToBackpack "rhsusf_acc_SR25S";
+player addItemToBackpack _armaSilenciadorDM;
 for "_i" from 1 to 4 do {player addItemToBackpack "rhs_mag_an_m8hc";};
 player addItemToBackpack "rhs_mag_mk84";
 player addItemToBackpack "rhs_mag_m18_red";
