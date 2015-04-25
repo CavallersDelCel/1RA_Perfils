@@ -30,7 +30,8 @@
 //         ...   (2013-12-26 a 2015-04-21) Canvis varis per CC_Viper (actualitzacions, RHS, AGM,...)     //
 //         3.2  (2015-04-21) Afegit el suport per bípodes i 0.3.7 de RHS per CC_Viper.                   //
 //         3.3  (2015-04-25) Reestructuració del document per CC_Magnetar.                               //
-//         3.4  (2015-04-25) Afegit el perfil per Javelin per CC_Magnetar.                               //
+//         3.4  (2015-04-25) Afegit el perfil per Javelin i un diàleg de confirmació a l'hora de desar   //
+//                           els perfils per CC_Magnetar.                                                //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -38,10 +39,16 @@
 //        de forma oficial.                                                                              //
 //=======================================================================================================//
 
+// Preguntar si es vol desar els perfils
+_guardarPerfils = ["Esteu segurs de guardar els perfils?", "Perfils 1RA", true, true] call BIS_fnc_guiMessage;
+
+if ( !_guardarPerfils ) exitWith{
+	// No fer res si la resposta és negativa (Cancel) i sortir del script
+};
 // Desactivar qualsevol moviment del jugador
 disableUserInput true;
 
-_blackScreen = execVM"fnc\effects\blackScreen.sqf";
+_blackScreen = execVM "fnc\effects\blackScreen.sqf";
 
 // Informa al jugador del que s'està fent.
 player sidechat format ["%1", "Carregant i desant tots els perfils. Trigarà 2 minuts, espera si us plau..."];
