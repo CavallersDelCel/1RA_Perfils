@@ -30,8 +30,9 @@
 //         ...   (2013-12-26 a 2015-04-21) Canvis varis per CC_Viper (actualitzacions, RHS, AGM,...)     //
 //         3.2  (2015-04-21) Afegit el suport per bípodes i 0.3.7 de RHS per CC_Viper.                   //
 //         3.3  (2015-04-25) Reestructuració del document per CC_Magnetar.                               //
-//         3.4  (2015-04-25) Afegit el perfil per Javelin i un diàleg de confirmació a l'hora de desar   //
-//                           els perfils per CC_Magnetar.                                                //
+//         3.4  (2015-04-25) Afegit el perfil per Javelin, retocat el perfil de "Metrallador M240" i     //
+//                           s'ha afegit també un diàleg de confirmació a l'hora de desar els perfils    //
+//                           per CC_Magnetar.                                                            //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -442,34 +443,31 @@ removeHeadgear player;
 removeGoggles player;
 
 // Uniforme
-player forceAddUniform "rhs_uniform_cu_ocp";
-player addItemToUniform "AGM_EarBuds";
-player addItemToUniform "AGM_CableTie";
-player addItemToUniform "AGM_MapTools";
-player addItemToUniform "AGM_Epipen";
-player addItemToUniform "AGM_Morphine";
-for "_i" from 1 to 2 do {player addItemToUniform "rhsusf_mag_7x45acp_MHP";};
-for "_i" from 1 to 2 do {player addItemToUniform "rhs_mag_an_m8hc";};
-for "_i" from 1 to 3 do {player addItemToUniform "rhs_mag_m67";};
-
-// Armilla
+(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_MapTools",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",2];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_m67",3];
+		
+// Uniforme, casc, armilla i motxila
 player addVest "rhsusf_iotv_ocp_SAW";
-for "_i" from 1 to 2 do {player addItemToVest "AGM_Bandage";};
-player addItemToVest "AGM_Morphine";
-player addItemToVest "AGM_Epipen";
-for "_i" from 1 to 3 do {player addItemToVest "rhs_mag_m67";};
-player addItemToVest "rhsusf_100Rnd_762x51";
-for "_i" from 1 to 2 do {player addItemToVest "rhsusf_100Rnd_762x51"; Sleep 1;};
-
-// Motxilla
+(vestContainer player) addItemCargoGlobal ["AGM_Bandage",2];
+(vestContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(vestContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(vestContainer player) addMagazineCargoGlobal ["rhs_mag_m67",3];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",4];
+		
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
-player addItemToBackpack "rhsusf_ANPVS_14";
-for "_i" from 1 to 4 do {player addItemToBackpack "AGM_Bandage";};
-player addItemToBackpack "rhs_mag_mk84";
-for "_i" from 1 to 3 do {player addItemToBackpack "rhs_mag_an_m8hc";};
-player addItemToBackpack "rhs_mag_m18_red";
-player addItemToBackpack "rhs_mag_m18_green";
-for "_i" from 1 to 2 do {player addItemToBackpack "rhsusf_100Rnd_762x51";};
+(unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",3];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_green",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",1];
 
 // Casc
 player addHeadgear "rhsusf_ach_helmet_headset_ocp";
