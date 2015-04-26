@@ -21,6 +21,7 @@
 //                  Metrallador         CC - Metrallador M240B OCP                                       //
 //                  Fuseller AT4        CC - AT M4A1+AT4 OCP                                             //
 //                  Antitanc (Javelin)  CC - AT M4A1 + Javelin OCP                                       //
+//                  Antiaèri (Stinger)  CC - AT M4A1 + Stinger OCP                                       //
 //                  Tirador designat    CC - Tirador SR-25EC OCP                                         //
 //                  Metge               CC - Metge M4A1 OCP                                              //
 //                  Enginyer            CC - Explosius M4A1 OCP                                          //
@@ -31,7 +32,8 @@
 //         3.2   (2015-04-21) Afegit el suport per bípodes i 0.3.7 de RHS per CC_Viper.                  //
 //         3.3   (2015-04-26) Reestructuració del document, afegit el perfil per Javelin i un diàleg de  //
 //                            confirmació a l'hora de desar els perfils per CC_Magnetar.                 //
-//         3.4   (2015-04-26) Afegit el perfil anti-aèri per CC_Magnetar.                                //
+//         3.4   (2015-04-26) Afegit el perfil anti-aèri per CC_Magnetar i petites correccions per       //
+//                            CC_Viper                                                                   //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -641,6 +643,9 @@ player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
 player linkItem "ItemRadio";
 
+// Insígnia
+[player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
+
 sleep 5;
 _namespace = profileNamespace;
 _loadout = [player,[_namespace,"CC - AT M4A1 + Javelin OCP"]] call BIS_fnc_saveInventory;
@@ -712,6 +717,9 @@ player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
 player linkItem "ItemRadio";
 
+// Insígnia
+[player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
+
 sleep 5;
 _namespace = profileNamespace;
 _loadout = [player,[_namespace,"CC - AA M4A1 + Stinger OCP"]] call BIS_fnc_saveInventory;
@@ -772,7 +780,7 @@ player addHeadgear "rhsusf_ach_helmet_headset_ocp";
 // Armes
 player addWeapon "rhs_weap_sr25_ec";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15A";
-player addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4_2";
+player addPrimaryWeaponItem "rhsusf_acc_LEUPOLDMK4";
 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 player addWeapon "rhsusf_weap_m1911a1";
 player addWeapon "lerca_1200_tan";
