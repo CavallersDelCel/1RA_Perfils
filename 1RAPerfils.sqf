@@ -42,7 +42,7 @@
 //=======================================================================================================//
 
 // Preguntar si es vol desar els perfils
-_guardarPerfils = ["Esteu segurs de guardar els perfils?", "Perfils 1RA", true, true] call BIS_fnc_guiMessage;
+_guardarPerfils = ["Estàs segur de desar els perfils?", "Perfils 1RA", true, true] call BIS_fnc_guiMessage;
 
 if ( !_guardarPerfils ) exitWith{
 	// No fer res si la resposta és negativa (Cancel) i sortir del script
