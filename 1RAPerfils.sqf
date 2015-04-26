@@ -1,7 +1,7 @@
 //=======================================================================================================//
 // Arxiu: 1RAPerfils.sqf                                                                                 //
 // Autor: CC_Viper, CC_Magnetar, CC_OMSmolina, CC_TBlack                                                 //
-// Versió: 3.2a                                                                                          //
+// Versió: 3.4                                                                                           //
 // Creació del Document: 25/04/2015                                                                      //
 // Descripció: Aquest document serveix per definir els diferents perfils que utlitzen els jugadors del   //
 //             grup de Cavallers del Cel (http://www.cavallersdelcel.cat). Es requereixen els següents   //
@@ -20,8 +20,8 @@
 //                  Fuseller automàtic  CC - FA M249 OCP                                                 //
 //                  Metrallador         CC - Metrallador M240B OCP                                       //
 //                  Fuseller AT4        CC - AT M4A1+AT4 OCP                                             //
-//                  Antitanc (Javelin)  CC - AT M4A1 + Javelin OCP                                       //
-//                  Antiaèri (Stinger)  CC - AT M4A1 + Stinger OCP                                       //
+//                  Antitanc (Javelin)  CC - AT M4A1+Javelin OCP                                       //
+//                  Antiaèri (Stinger)  CC - AT M4A1+Stinger OCP                                       //
 //                  Tirador designat    CC - Tirador SR-25EC OCP                                         //
 //                  Metge               CC - Metge M4A1 OCP                                              //
 //                  Enginyer            CC - Explosius M4A1 OCP                                          //
@@ -32,8 +32,9 @@
 //         3.2   (2015-04-21) Afegit el suport per bípodes i 0.3.7 de RHS per CC_Viper.                  //
 //         3.3   (2015-04-26) Reestructuració del document, afegit el perfil per Javelin i un diàleg de  //
 //                            confirmació a l'hora de desar els perfils per CC_Magnetar.                 //
-//         3.4   (2015-04-26) Afegit el perfil anti-aèri per CC_Magnetar i petites correccions per       //
-//                            CC_Viper                                                                   //
+//         3.4   (2015-04-26) Afegit el perfil anti-aèri per CC_Magnetar, actualitzats els perfils de    //
+//                            "CC - Metrallador M240B OCP" i "CC - FA M249 OCP" per CC_Viper i           //
+//                            i CC_Magnetar.                                                             //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -383,33 +384,29 @@ removeGoggles player;
 
 // Uniforme
 player forceAddUniform "rhs_uniform_cu_ocp";
-(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
-(uniformContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",2];
+(uniformContainer player) addItemCargoGlobal ["AGM_Bandage",2];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",2];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",6];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
 
 // Armilla
 player addVest "rhsusf_iotv_ocp_SAW";
-(vestContainer player) addItemCargoGlobal ["AGM_Bandage",2];
-(vestContainer player) addItemCargoGlobal ["AGM_Morphine",1];
-(vestContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(vestContainer player) addItemCargoGlobal ["AGM_CableTie",1];
 (vestContainer player) addItemCargoGlobal ["AGM_MapTools",1];
+(vestContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
 (vestContainer player) addMagazineCargoGlobal ["rhs_mag_m67",3];
 (vestContainer player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
-(vestContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
-(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",3];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",1];
+(vestContainer player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
 
 // Motxilla
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 (unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",4];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",3];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_green",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_CableTie",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
+(unitBackpack player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",3];
 
 // Casc
 player addHeadgear "rhsusf_ach_helmet_headset_ocp";
@@ -453,31 +450,27 @@ removeGoggles player;
 
 // Uniforme
 player forceAddUniform "rhs_uniform_cu_ocp";
-(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_MapTools",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
-(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",2];
-(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_m67",3];
-		
+(uniformContainer player) addItemCargoGlobal ["AGM_Bandage",6];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",2];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",2];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",1];
+
 // Uniforme, casc, armilla i motxila
 player addVest "rhsusf_iotv_ocp_SAW";
-(vestContainer player) addItemCargoGlobal ["AGM_Bandage",2];
-(vestContainer player) addItemCargoGlobal ["AGM_Morphine",1];
-(vestContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(vestContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(vestContainer player) addItemCargoGlobal ["AGM_MapTools",1];
+(vestContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
 (vestContainer player) addMagazineCargoGlobal ["rhs_mag_m67",3];
-(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",4];
-		
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
+(vestContainer player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
+
+// Motxilla		
 player addBackpack "rhsusf_assault_eagleaiii_ocp";
 (unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",3];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_green",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
+(unitBackpack player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
 
 // Casc
 player addHeadgear "rhsusf_ach_helmet_headset_ocp";
@@ -579,7 +572,7 @@ player sidechat format ["%1", "Perfil << AT M4A1+AT4 OCP >> desat"];
 sleep 5;
 
 //=======================================================================================================//
-// Antitanc: CC - AT M4A1 + Javelin OCP                                                                    //
+// Antitanc: CC - AT M4A1+Javelin OCP                                                                    //
 //=======================================================================================================//
 
 // Treure tots els objectes
@@ -648,12 +641,12 @@ player linkItem "ItemRadio";
 
 sleep 5;
 _namespace = profileNamespace;
-_loadout = [player,[_namespace,"CC - AT M4A1 + Javelin OCP"]] call BIS_fnc_saveInventory;
-player sidechat format ["%1", "Perfil << AT M4A1 + Javelin OCP >> desat"];
+_loadout = [player,[_namespace,"CC - AT M4A1+Javelin OCP"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << AT M4A1+Javelin OCP >> desat"];
 sleep 5;
 
 //=======================================================================================================//
-// Antitanc: CC - AA M4A1 + Stinger OCP                                                                    //
+// Antitanc: CC - AA M4A1+Stinger OCP                                                                    //
 //=======================================================================================================//
 
 // Treure tots els objectes
@@ -722,8 +715,8 @@ player linkItem "ItemRadio";
 
 sleep 5;
 _namespace = profileNamespace;
-_loadout = [player,[_namespace,"CC - AA M4A1 + Stinger OCP"]] call BIS_fnc_saveInventory;
-player sidechat format ["%1", "Perfil << AA M4A1 + Stinger OCP >> desat"];
+_loadout = [player,[_namespace,"CC - AA M4A1+Stinger OCP"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << AA M4A1+Stinger OCP >> desat"];
 sleep 5;
 
 //=======================================================================================================//
