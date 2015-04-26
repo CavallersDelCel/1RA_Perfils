@@ -20,8 +20,8 @@
 //                  Fuseller automàtic  CC - FA M249 OCP                                                 //
 //                  Metrallador         CC - Metrallador M240B OCP                                       //
 //                  Fuseller AT4        CC - AT M4A1+AT4 OCP                                             //
-//                  Antitanc (Javelin)  CC - AT M4A1+Javelin OCP                                       //
-//                  Antiaèri (Stinger)  CC - AT M4A1+Stinger OCP                                       //
+//                  Antitanc (Javelin)  CC - AT M4A1+Javelin OCP                                         //
+//                  Antiaèri (Stinger)  CC - AT M4A1+Stinger OCP                                         //
 //                  Tirador designat    CC - Tirador SR-25EC OCP                                         //
 //                  Metge               CC - Metge M4A1 OCP                                              //
 //                  Enginyer            CC - Explosius M4A1 OCP                                          //
@@ -388,7 +388,7 @@ player forceAddUniform "rhs_uniform_cu_ocp";
 (uniformContainer player) addItemCargoGlobal ["AGM_Morphine",2];
 (uniformContainer player) addItemCargoGlobal ["AGM_Epipen",6];
 (uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
-(uniformContainer player) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",1];
 
 // Armilla
 player addVest "rhsusf_iotv_ocp_SAW";
