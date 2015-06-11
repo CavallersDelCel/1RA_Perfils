@@ -16,10 +16,10 @@
 //                  Líder d'esquadra    CC - Lider d'esquadra M4A1+M320 OCP                              //
 //                  Líder d'equip       CC - Lider d'equip M4A1+M320 OCP                                 //
 //                  Fuseller            CC - Fuseller M4A1 OCP                                           //
+//                  Fuseller AT4        CC - AT M4A1+AT4 OCP                                             //
 //                  Granader            CC - Granader M4A1+M320 OCP                                      //
 //                  Fuseller automàtic  CC - FA M249 OCP                                                 //
 //                  Metrallador         CC - Metrallador M240B OCP                                       //
-//                  Fuseller AT4        CC - AT M4A1+AT4 OCP                                             //
 //                  Antitanc (Javelin)  CC - AT M4A1+Javelin OCP                                         //
 //                  Antiaèri (Stinger)  CC - AT M4A1+Stinger OCP                                         //
 //                  Tirador designat    CC - Tirador SR-25EC OCP                                         //
