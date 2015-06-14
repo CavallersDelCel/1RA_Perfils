@@ -1016,6 +1016,281 @@ sleep 5;
 _namespace = profileNamespace;
 _loadout = [player,[_namespace,"CC - Franctirador M2010ESR OCP"]] call BIS_fnc_saveInventory;
 player sidechat format ["%1", "Perfil << Franctirador M2010ESR OCP >> desat"];
+sleep 5;
+
+//=======================================================================================================//
+// Bussejador líder: CC - Bussejador lider M4A1+M320                                                     //
+//=======================================================================================================//
+
+// Treure tots els objectes
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeAllItemsWithMagazines player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+// Uniforme
+player forceAddUniform "U_B_Wetsuit";
+(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+
+// Armilla
+player addVest "V_RebreatherB";
+// No es permeten objectes en aquesta armilla
+
+// Motxilla
+player addBackpack "tf_rt1523g_big_rhs";
+(unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
+(unitBackpack player) addItemCargoGlobal ["AGM_MapTools",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",4];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",3];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_green",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_purple",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_yellow",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m715_Green",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m716_yellow",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m713_Red",1];
+
+// Ulleres
+player addGoggles "G_Diving";
+
+// Armes
+player addWeapon "rhs_weap_m4a1_m320";
+player addPrimaryWeaponItem "rhsusf_acc_SF3P556";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
+player addPrimaryWeaponItem "rhsusf_acc_ACOG";
+player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "AGM_Vector";
+
+// Objectes
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_microdagr";
+player linkItem "ItemRadio";
+player linkItem "B_UavTerminal";
+
+// Insígnia
+[player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
+
+sleep 5;
+_namespace = profileNamespace;
+_loadout = [player,[_namespace,"CC - Bussejador lider M4A1+M320"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << Bussejador lider M4A1+M320>> desat"];
+sleep 5;
+
+//=======================================================================================================//
+// Bussejador: CC - Bussejador M4A1                                                                      //
+//=======================================================================================================//
+
+// Treure tots els objectes
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeAllItemsWithMagazines player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+// Uniforme
+player forceAddUniform "U_B_Wetsuit";
+(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+
+// Armilla
+player addVest "V_RebreatherB";
+// No es permeten objectes en aquesta armilla
+
+// Motxilla
+player addBackpack "B_AssaultPack_blk";
+(unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",7];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",4];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",3];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
+
+// Ulleres
+player addGoggles "G_Diving";
+
+// Armes
+player addWeapon "rhs_weap_m4a1";
+player addPrimaryWeaponItem "rhsusf_acc_SF3P556";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
+player addPrimaryWeaponItem "rhsusf_acc_ACOG";
+player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "lerca_1200_tan";
+
+// Objectes
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_microdagr";
+player linkItem "ItemRadio";
+
+// Insígnia
+[player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
+
+sleep 5;
+_namespace = profileNamespace;
+_loadout = [player,[_namespace,"CC - Bussejador M4A1"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << Bussejador M4A1 >> desat"];
+sleep 5;
+
+//=======================================================================================================//
+// Bussejador metge: CC - Bussejador metge M4A1                                                          //
+//=======================================================================================================//
+
+// Treure tots els objectes
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeAllItemsWithMagazines player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+// Uniforme
+player forceAddUniform "U_B_Wetsuit";
+(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+
+// Armilla
+player addVest "V_RebreatherB";
+// No es permeten objectes en aquesta armilla
+
+// Motxilla
+player addBackpack "B_AssaultPack_blk";
+(unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_MapTools",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",15];
+(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",8];
+(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",8];
+(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag",3];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",1];
+
+// Ulleres
+player addGoggles "G_Diving";
+
+// Armes
+player addWeapon "rhs_weap_m4a1";
+player addPrimaryWeaponItem "rhsusf_acc_SF3P556";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
+player addPrimaryWeaponItem "rhsusf_acc_ACOG";
+player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "lerca_1200_tan";
+
+// Objectes
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_microdagr";
+player linkItem "ItemRadio";
+
+// Insígnia
+[player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
+
+sleep 5;
+_namespace = profileNamespace;
+_loadout = [player,[_namespace,"CC - Bussejador metge M4A1"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << Bussejador metge M4A1 >> desat"];
+sleep 5;
+
+//=======================================================================================================//
+// Bussejador explosius: CC - Bussejador explosius M4A1                                                  //
+//=======================================================================================================//
+
+// Treure tots els objectes
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeAllItemsWithMagazines player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+// Uniforme
+player forceAddUniform "U_B_Wetsuit";
+(uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Bandage",4];
+(uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+
+// Armilla
+player addVest "V_RebreatherB";
+// No es permeten objectes en aquesta armilla
+
+// Motxilla
+player addBackpack "B_AssaultPack_blk";
+(unitBackpack player) addItemCargoGlobal ["AGM_MapTools",1];
+(unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_Clacker",1];
+(unitBackpack player) addItemCargoGlobal ["AGM_DefusalKit",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
+(unitBackpack player) addMagazineCargoGlobal ["DemoCharge_Remote_Mag",3];
+(unitBackpack player) addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag",1];
+
+// Ulleres
+player addGoggles "G_Diving";
+
+// Armes
+player addWeapon "rhs_weap_m4a1";
+player addPrimaryWeaponItem "rhsusf_acc_SF3P556";
+player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
+player addPrimaryWeaponItem "rhsusf_acc_ACOG";
+player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "lerca_1200_tan";
+
+// Objectes
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_microdagr";
+player linkItem "ItemRadio";
+
+// Insígnia
+[player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
+
+sleep 5;
+_namespace = profileNamespace;
+_loadout = [player,[_namespace,"CC - Bussejador explosius M4A1"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << Bussejador explosius M4A1 >> desat"];
 
 //=======================================================================================================//
 // Tots els perfils estan guardats                                                                       //
