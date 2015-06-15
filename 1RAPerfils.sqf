@@ -1019,7 +1019,7 @@ player sidechat format ["%1", "Perfil << Franctirador M2010ESR OCP >> desat"];
 sleep 5;
 
 //=======================================================================================================//
-// Bussejador líder: CC - Bussejador lider M4A1+M320                                                     //
+// Bussejador líder: CC - Bussejador lider M4A1                                                          //
 //=======================================================================================================//
 
 // Treure tots els objectes
@@ -1038,10 +1038,12 @@ player forceAddUniform "U_B_Wetsuit";
 (uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
 (uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
 (uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Bandage",4];
 (uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_MapTools",1];
 (uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
-(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
-(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
 
 // Armilla
 player addVest "V_RebreatherB";
@@ -1050,26 +1052,23 @@ player addVest "V_RebreatherB";
 // Motxilla
 player addBackpack "tf_rt1523g_big_rhs";
 (unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
-(unitBackpack player) addItemCargoGlobal ["AGM_MapTools",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",7];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",4];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",3];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_green",1];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_purple",1];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_yellow",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m715_Green",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m716_yellow",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m713_Red",1];
+(unitBackpack player) addItemCargoGlobal ["rhs_uniform_cu_ocp",1];
+
+// Casc
+player addHeadgear "rhs_Booniehat_ocp";
 
 // Ulleres
 player addGoggles "G_Diving";
 
 // Armes
-player addWeapon "rhs_weap_m4a1_m320";
+player addWeapon "rhs_weap_m4a1";
 player addPrimaryWeaponItem "rhsusf_acc_SF3P556";
 player addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 player addPrimaryWeaponItem "rhsusf_acc_ACOG";
@@ -1088,8 +1087,8 @@ player linkItem "B_UavTerminal";
 
 sleep 5;
 _namespace = profileNamespace;
-_loadout = [player,[_namespace,"CC - Bussejador lider M4A1+M320"]] call BIS_fnc_saveInventory;
-player sidechat format ["%1", "Perfil << Bussejador lider M4A1+M320>> desat"];
+_loadout = [player,[_namespace,"CC - Bussejador lider M4A1"]] call BIS_fnc_saveInventory;
+player sidechat format ["%1", "Perfil << Bussejador lider M4A1>> desat"];
 sleep 5;
 
 //=======================================================================================================//
@@ -1110,12 +1109,12 @@ removeGoggles player;
 // Uniforme
 player forceAddUniform "U_B_Wetsuit";
 (uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",2];
 (uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
 (uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
 (uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
 (uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
-(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",4];
 
 // Armilla
 player addVest "V_RebreatherB";
@@ -1124,13 +1123,16 @@ player addVest "V_RebreatherB";
 // Motxilla
 player addBackpack "B_AssaultPack_blk";
 (unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",1];
 (unitBackpack player) addItemCargoGlobal ["AGM_Bandage",4];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",7];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",8];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",4];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",3];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
+(unitBackpack player) addItemCargoGlobal ["rhs_uniform_cu_ocp",1];
+
+// Casc
+player addHeadgear "rhs_Booniehat_ocp";
 
 // Ulleres
 player addGoggles "G_Diving";
@@ -1176,12 +1178,11 @@ removeGoggles player;
 // Uniforme
 player forceAddUniform "U_B_Wetsuit";
 (uniformContainer player) addItemCargoGlobal ["AGM_EarBuds",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
-(uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Morphine",6];
+(uniformContainer player) addItemCargoGlobal ["AGM_Epipen",6];
+(uniformContainer player) addItemCargoGlobal ["AGM_MapTools",1];
 (uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
-(uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
-(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",5];
 
 // Armilla
 player addVest "V_RebreatherB";
@@ -1190,15 +1191,15 @@ player addVest "V_RebreatherB";
 // Motxilla
 player addBackpack "B_AssaultPack_blk";
 (unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_MapTools",1];
 (unitBackpack player) addItemCargoGlobal ["AGM_Bandage",15];
-(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",8];
-(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",8];
+(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",2];
+(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",2];
 (unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag",3];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m67",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",4];
+(unitBackpack player) addItemCargoGlobal ["rhs_uniform_cu_ocp",1];
+
+// Casc
+player addHeadgear "rhs_Booniehat_ocp";
 
 // Ulleres
 player addGoggles "G_Diving";
@@ -1247,10 +1248,15 @@ player forceAddUniform "U_B_Wetsuit";
 (uniformContainer player) addItemCargoGlobal ["AGM_Morphine",1];
 (uniformContainer player) addItemCargoGlobal ["AGM_Epipen",1];
 (uniformContainer player) addItemCargoGlobal ["AGM_CableTie",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_MapTools",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_Clacker",1];
+(uniformContainer player) addItemCargoGlobal ["AGM_DefusalKit",1];
 (uniformContainer player) addItemCargoGlobal ["AGM_Bandage",4];
 (uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_m67",1];
 (uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",1];
-(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+(uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",5];
 
 // Armilla
 player addVest "V_RebreatherB";
@@ -1258,14 +1264,13 @@ player addVest "V_RebreatherB";
 
 // Motxilla
 player addBackpack "B_AssaultPack_blk";
-(unitBackpack player) addItemCargoGlobal ["AGM_MapTools",1];
 (unitBackpack player) addItemCargoGlobal ["rhsusf_ANPVS_14",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_Clacker",1];
-(unitBackpack player) addItemCargoGlobal ["AGM_DefusalKit",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",5];
 (unitBackpack player) addMagazineCargoGlobal ["DemoCharge_Remote_Mag",3];
-(unitBackpack player) addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag",1];
+(unitBackpack player) addItemCargoGlobal ["rhs_uniform_cu_ocp",1];
+
+// Casc
+player addHeadgear "rhs_Booniehat_ocp";
 
 // Ulleres
 player addGoggles "G_Diving";
