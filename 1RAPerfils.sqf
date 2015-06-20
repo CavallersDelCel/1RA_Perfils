@@ -2,13 +2,15 @@
 // Arxiu: 1RAPerfils.sqf                                                                                 //
 // Autor: CC_Viper, CC_Magnetar, CC_OMSmolina, CC_TBlack                                                 //
 // Versió: 3.4.1                                                                                         //
-// Creació del Document: 25/04/2015                                                                      //
+// Creació del Document: 2015/04/25                                                                      //
 // Descripció: Aquest document serveix per definir els diferents perfils que utlitzen els jugadors del   //
 //             grup de Cavallers del Cel (http://www.cavallersdelcel.cat). Es requereixen els següents   //
 //             mods per funcionar correctament:                                                          //
-//                  - RHS United States Armed Forces (RHS USAF).                                         //
-//                  - Task Force Arrowhead Radio (TFAR).                                                 //
-//                  - Authentic Gameplay Modification (AGM).                                             //
+//                  - Advanced Gameplay Modification (AGM): https://github.com/KoffeinFlummi/AGM         //
+//                  - CC_Insignia: Mod propi amb l'escut del grup 1RA                                    //
+//                  - RHS United States Armed Forces (USAF): http://www.rhsmods.org/mod/2                //
+//                  - Task Force Arrowhead Radio (TFAR):                                                 //
+//                    https://github.com/michail-nikolaev/task-force-arma-3-radio                        //
 //                                                                                                       //
 //             Els següents perfils estan definits en aquest document:                                   //
 //                                                                                                       //
