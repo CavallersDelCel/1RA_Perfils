@@ -20,34 +20,25 @@ Els perfils requereixen els següents mods per funcionar correctament:
 
 ###Perfils definits:
 
-**Rol associat**     **Nom del perfil**
+El següent llistat mostra els perfils suportats en el format *Rol associat: Nom del perfil*:
 
-Líder d'esquadra     CC - Lider d'esquadra M4A1+M320 OCP
-
-Líder d'equip        CC - Lider d'equip M4A1+M320 OCP
-
-Fuseller             CC - Fuseller M4A1 OCP
-
-Fuseller AT4         CC - AT M4A1+AT4 OCP
-
-Granader             CC - Granader M4A1+M320 OCP
-
-Fuseller automàtic   CC - FA M249 OCP
-
-Metrallador          CC - Metrallador M240B OCP
-
-Antitanc (Javelin)   CC - AT M4A1+Javelin OCP
-
-Antiaèri (Stinger)   CC - AT M4A1+Stinger OCP
-
-Tirador designat     CC - Tirador SR-25EC OCP
-
-Metge                CC - Metge M4A1 OCP
-
-Enginyer             CC - Explosius M4A1 OCP
-
-Franctirador         CC - Franctirador M2010ESR OCP
-
+* Líder d'esquadra: 'CC - Lider d'esquadra M4A1+M320 OCP'
+* Líder d'equip: 'CC - Lider d'equip M4A1+M320 OCP'
+* Fuseller: 'CC - Fuseller M4A1 OCP'
+* Fuseller AT4: 'CC - AT M4A1+AT4 OCP'
+* Granader: 'CC - Granader M4A1+M320 OCP'
+* Fuseller automàtic: 'CC - FA M249 OCP'
+* Metrallador: 'CC - Metrallador M240B OCP'
+* Antitanc (Javelin): 'CC - AT M4A1+Javelin OCP'
+* Antiaèri (Stinger): 'CC - AT M4A1+Stinger OCP'
+* Tirador designat: 'CC - Tirador SR-25EC OCP'
+* Metge: 'CC - Metge M4A1 OCP'
+* Enginyer: 'CC - Explosius M4A1 OCP'
+* Franctirador: 'CC - Franctirador M2010ESR OCP'
+* Bussejador líder: 'CC - Bussejador lider M4A1'
+* Bussejador: 'CC - Bussejador M4A1'
+* Bussejador metge: 'CC - Bussejador metge M4A1'
+* Bussejador explosius: 'CC - Bussejador explosius M4A'
 
 ### Canvis:
 
@@ -57,6 +48,7 @@ Franctirador         CC - Franctirador M2010ESR OCP
 3.3   (2015-04-26) Reestructuració del document, afegit el perfil per Javelin i un diàleg de confirmació a l'hora de desar els perfils per CC_Magnetar.
 3.4   (2015-04-26) Afegit el perfil anti-aèri per CC_Magnetar, actualitzats els perfils de "CC - Metrallador M240B OCP" i "CC - FA M249 OCP" per CC_Viper i CC_Magnetar.
 3.4.1 (2015-06-12) Canviada l'arma M249 de "rhs_weap_m249_pip" a "rhs_weap_m249_pip_S" i l'arma M240B de "rhs_weap_m240B" a "rhs_weap_m240B_CAP" degut als canvis a la versió 0.3.8 de RHS per CC_Magnetar i CC_Viper.
+3.5   (2015-06-20) Afegits els perfils "CC - Bussejador lider M4A1", "CC - Bussejador M4A1", "CC - Bussejador metge M4A1" i "CC - Bussejador explosius M4A1" per CC_Magnetar i CC_Viper.
 
 ### IMPORTANT:
 
