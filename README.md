@@ -39,7 +39,7 @@ El següent llistat mostra els perfils suportats en el format **Rol associat**: `
 * **Antiaèri (Stinger)**: `CC - AT M4A1+Stinger OCP`
 * **Tirador designat**: `CC - Tirador SR-25EC OCP`
 * **Metge**: `CC - Metge M4A1 OCP`
-* **Enginyer**: `CC - Explosius M4A1 OCP`
+* **Explosius**: `CC - Explosius M4A1 OCP`
 * **Franctirador**: `CC - Franctirador M2010ESR OCP`
 * **Bussejador líder**: `CC - Bussejador lider M4A1`
 * **Bussejador**: `CC - Bussejador M4A1`
