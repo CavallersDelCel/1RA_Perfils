@@ -1,6 +1,6 @@
 //=======================================================================================================//
 // Arxiu: 1RAPerfils.sqf                                                                                 //
-// Autor: CC_Viper, CC_Magnetar, CC_OMSmolina, CC_TBlack                                                 //
+// Autor: CC_Viper, CC_Magnetar, CC_OMSmolina i CC_TBlack                                                //
 // Versió: 3.5                                                                                           //
 // Creació del Document: 2015/04/25                                                                      //
 // Descripció: Aquest document serveix per definir els diferents perfils que utlitzen els jugadors del   //
@@ -33,18 +33,18 @@
 //                  Bussejador metge     CC - Bussejador metge M4A1                                      //
 //                  Bussejador explosius CC - Bussejador explosius M4A1                                  //
 //                                                                                                       //
-// Canvis: 1.0   (2013-12-26) Document inicial per CC_OMSmolina, CC_TBlack i CC_Viper.                   //
-//         ...   (2013-12-26 a 2015-04-21) Canvis varis per CC_Viper (actualitzacions, RHS, AGM,...)     //
-//         3.2   (2015-04-21) Afegit el suport per bípodes i 0.3.7 de RHS per CC_Viper.                  //
-//         3.3   (2015-04-26) Reestructuració del document, afegit el perfil per Javelin i un diàleg de  //
+// Canvis: 1.0   (2013/12/26) Document inicial per CC_OMSmolina, CC_TBlack i CC_Viper.                   //
+//         ...   (2013/12/26 a 2015/04/21) Canvis varis per CC_Viper (actualitzacions, RHS, AGM,...)     //
+//         3.2   (2015/04/21) Afegit el suport per bípodes i 0.3.7 de RHS per CC_Viper.                  //
+//         3.3   (2015/04/26) Reestructuració del document, afegit el perfil per Javelin i un diàleg de  //
 //                            confirmació a l'hora de desar els perfils per CC_Magnetar.                 //
-//         3.4   (2015-04-26) Afegit el perfil anti-aèri per CC_Magnetar, actualitzats els perfils de    //
+//         3.4   (2015/04/26) Afegit el perfil anti-aèri per CC_Magnetar, actualitzats els perfils de    //
 //                            "CC - Metrallador M240B OCP" i "CC - FA M249 OCP" per CC_Viper i           //
 //                            i CC_Magnetar.                                                             //
-//         3.4.1 (2015-06-12) Canviada l'arma M249 de "rhs_weap_m249_pip" a "rhs_weap_m249_pip_S" i      //
+//         3.4.1 (2015/06/12) Canviada l'arma M249 de "rhs_weap_m249_pip" a "rhs_weap_m249_pip_S" i      //
 //                            l'arma M240B de "rhs_weap_m240B" a "rhs_weap_m240B_CAP" degut als canvis a //
 //                            la versió 0.3.8 de RHS per CC_Magnetar i CC_Viper.                         //
-//         3.5   (2015-06-20) Afegits els perfils "CC - Bussejador lider M4A1", "CC - Bussejador M4A1",  //
+//         3.5   (2015/06/20) Afegits els perfils "CC - Bussejador lider M4A1", "CC - Bussejador M4A1",  //
 //                            "CC - Bussejador metge M4A1" i "CC - Bussejador explosius M4A1" per        //
 //                            CC_Magnetar i CC_Viper.                                                    //
 //                                                                                                       //
