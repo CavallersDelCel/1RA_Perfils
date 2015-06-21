@@ -26,26 +26,28 @@ Els perfils requereixen els següents mods per funcionar correctament:
 
 ###Perfils definits:
 
-El següent llistat mostra els perfils suportats en el format **Rol associat**: `Nom del perfil`:
+El següent llistat mostra els perfils suportats:
 
-* **Líder d'esquadra**: `CC - Lider d'esquadra M4A1+M320 OCP`
-* **Líder d'equip**: `CC - Lider d'equip M4A1+M320 OCP`
-* **Fuseller**: `CC - Fuseller M4A1 OCP`
-* **Fuseller AT4**: `CC - AT M4A1+AT4 OCP`
-* **Granader**: `CC - Granader M4A1+M320 OCP`
-* **Fuseller automàtic**: `CC - FA M249 OCP`
-* **Metrallador**: `CC - Metrallador M240B OCP`
-* **Antitanc (Javelin)**: `CC - AT M4A1+Javelin OCP`
-* **Antiaèri (Stinger)**: `CC - AT M4A1+Stinger OCP`
-* **Tirador designat**: `CC - Tirador SR-25EC OCP`
-* **Metge**: `CC - Metge M4A1 OCP`
-* **Explosius**: `CC - Explosius M4A1 OCP`
-* **Franctirador**: `CC - Franctirador M2010ESR OCP`
-* **Observador**: `CC - Observador M4A1 OCP`
-* **Bussejador líder**: `CC - Bussejador lider M4A1`
-* **Bussejador**: `CC - Bussejador M4A1`
-* **Bussejador metge**: `CC - Bussejador metge M4A1`
-* **Bussejador explosius**: `CC - Bussejador explosius M4A1`
+| **Rol**        | **Nom del Perfil**          | 
+| ------------- | ------------- |
+| Líder d'esquadra | `CC - Lider d'esquadra M4A1+M320 OCP` |
+| Líder d'equip | `CC - Lider d'equip M4A1+M320 OCP` |
+| Fuseller | `CC - Fuseller M4A1 OCP` |
+| Fuseller AT4 | `CC - AT M4A1+AT4 OCP` |
+| Granader | `CC - Granader M4A1+M320 OCP` |
+| Fuseller automàtic | `CC - FA M249 OCP` |
+| Metrallador | `CC - Metrallador M240B OCP` |
+| Antitanc (Javelin) | `CC - AT M4A1+Javelin OCP` |
+| Antiaèri (Stinger) | `CC - AT M4A1+Stinger OCP` |
+| Tirador designat | `CC - Tirador SR-25EC OCP` |
+| Metge | `CC - Metge M4A1 OCP` |
+| Explosius | `CC - Explosius M4A1 OCP` |
+| Franctirador | `CC - Franctirador M2010ESR OCP` |
+| Observador | `CC - Observador M4A1 OCP` |
+| Bussejador líder | `CC - Bussejador lider M4A1` |
+| Bussejador | `CC - Bussejador M4A1` |
+| Bussejador metge | `CC - Bussejador metge M4A1` |
+| Bussejador explosius | `CC - Bussejador explosius M4A1` |
 
 ### Historial de canvis:
 
