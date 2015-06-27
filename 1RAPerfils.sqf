@@ -1,7 +1,7 @@
 //=======================================================================================================//
 // Arxiu: 1RAPerfils.sqf                                                                                 //
 // Autor: CC_Viper, CC_Magnetar, CC_OMSmolina i CC_TBlack                                                //
-// Versió: 3.6                                                                                           //
+// Versió: 3.7                                                                                           //
 // Creació del Document: 25/04/2015                                                                      //
 // Descripció: Aquest document serveix per definir els diferents perfils que utlitzen els jugadors del   //
 //             grup de Cavallers del Cel (http://www.cavallersdelcel.cat). Es requereixen els següents   //
@@ -50,6 +50,8 @@
 //                            CC_Magnetar i CC_Viper.                                                    //
 //         3.6   (21/06/2015) Modificació completa de CC_Viper per pasar de l'AGM al ACE3, canvis en     //
 //                            objectes varis i equip medic. Inclusió de nou perfil Observador.           //
+//         3.7   (27/06/2015) Canviat ItemRadio de tots els perfils pel model tf_anprc152 als liders     //
+//                            i el model tf_rf7800str a la resta per CC_Viper                            //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -142,7 +144,7 @@ player addWeapon "ACE_Vector";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_anprc152";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -227,7 +229,7 @@ player addWeapon "ACE_Vector";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_anprc152";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -302,7 +304,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -379,7 +381,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -450,7 +452,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -519,7 +521,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -596,7 +598,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -672,7 +674,7 @@ player addWeapon "rhsusf_weap_m1911a1";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -748,7 +750,7 @@ player addWeapon "rhsusf_weap_m1911a1";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -826,7 +828,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -902,7 +904,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -979,7 +981,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -1058,7 +1060,7 @@ player addWeapon "ACE_Vector";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_anprc152";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -1140,7 +1142,7 @@ player addWeapon "ACE_Vector";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -1218,7 +1220,7 @@ player addWeapon "ACE_Vector";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_anprc152";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -1292,7 +1294,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -1367,7 +1369,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;
@@ -1443,7 +1445,7 @@ player addWeapon "lerca_1200_tan";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "tf_microdagr";
-player linkItem "ItemRadio";
+player linkItem "tf_rf7800str";
 
 // Insígnia
 [player,"PATCH_CC_CC"] call bis_fnc_setUnitInsignia;

@@ -59,3 +59,4 @@ El següent llistat mostra els perfils suportats:
 * **3.4.1** *2015/06/12*: Canviada l'arma M249 de `rhs_weap_m249_pip` a `rhs_weap_m249_pip_S` i l'arma M240B de `rhs_weap_m240B` a `rhs_weap_m240B_CAP` degut als canvis a la versió 0.3.8 de RHS per CC_Magnetar i CC_Viper.
 * **3.5.0** *2015/06/20*: Afegits els perfils `CC - Bussejador lider M4A1`, `CC - Bussejador M4A1`, `CC - Bussejador metge M4A1` i `CC - Bussejador explosius M4A1` per CC_Magnetar i CC_Viper.
 * **3.6.0** *2015/06/21*: Conversió dels perfils a ACE3 i addició del perfil d'Observador `CC - Observador M4A1 OCP` per CC_Viper
+* **3.7.0** *2015/06/27*: Canviat ItemRadio de tots els perfils pel model tf_anprc152 als liders i el model tf_rf7800str a la resta per CC_Viper.
