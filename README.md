@@ -60,4 +60,4 @@ El següent llistat mostra els perfils suportats:
 * **3.5.0** *2015/06/20*: Afegits els perfils `CC - Bussejador lider M4A1`, `CC - Bussejador M4A1`, `CC - Bussejador metge M4A1` i `CC - Bussejador explosius M4A1` per CC_Magnetar i CC_Viper.
 * **3.6.0** *2015/06/21*: Conversió dels perfils a ACE3 i addició del perfil d'Observador `CC - Observador M4A1 OCP` per CC_Viper
 * **3.7.0** *2015/06/27*: Canviat ItemRadio de tots els perfils pel model `tf_anprc152` als líders i el model `tf_rf7800str` a la resta per CC_Viper.
-* **3.8.0** *2015/07/04*: Modificats l'equipació dels metges per CC_Viper.
+* **3.8.0** *2015/07/04*: Modificada l'equipació dels metges per CC_Viper. El perfil d'observadors inclou una ràdio de llarg abast `tf_rt1523g_big_rhs` i una ràdio curta `tf_anprc152` per CC_Magnetar. 
