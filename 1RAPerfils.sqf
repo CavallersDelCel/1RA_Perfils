@@ -55,6 +55,7 @@
 //         3.8   (04/07/2015) Modificada l'equipació dels metges per CC_Viper. El perfil d'observadors   //
 //                            inclou una ràdio de llarg abast "tf_rt1523g_big_rhs" i una ràdio curta     //
 //                            "tf_anprc152" per CC_Magnetar.                                             //
+//         3.8.1 (2015/07/29) Afegit el HuntIR al perfil de líder d'esquadra per CC_Magnetar.            //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -101,6 +102,7 @@ player forceAddUniform "rhs_uniform_cu_ocp";
 (uniformContainer player) addItemCargoGlobal ["rhsusf_acc_rotex5_grey",1];
 (uniformContainer player) addMagazineCargoGlobal ["rhsusf_mag_7x45acp_MHP",3];
 (uniformContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",1];
+(uniformContainer player) addMagazineCargoGlobal ["ACE_HuntIR_M203",1];
 
 // Armilla
 player addVest "rhsusf_iotv_ocp_squadleader";
@@ -111,10 +113,11 @@ player addVest "rhsusf_iotv_ocp_squadleader";
 (vestContainer player) addItemCargoGlobal ["ACE_tourniquet",1];
 (vestContainer player) addItemCargoGlobal ["ACE_MapTools",1];
 (vestContainer player) addItemCargoGlobal ["ACE_microDAGR",1];
-(vestContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",10];
+(vestContainer player) addItemCargoGlobal ["ACE_HuntIR_monitor",1];
+(vestContainer player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",9];
 (vestContainer player) addMagazineCargoGlobal ["rhs_mag_m67",3];
 (vestContainer player) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
-(vestContainer player) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",7];
+(vestContainer player) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",4];
 (vestContainer player) addMagazineCargoGlobal ["rhs_mag_m714_White",1];
 
 // Motxilla
