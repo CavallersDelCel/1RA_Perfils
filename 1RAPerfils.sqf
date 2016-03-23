@@ -1,7 +1,7 @@
 //=======================================================================================================//
 // Arxiu: 1RAPerfils.sqf                                                                                 //
 // Autor: CC_Viper, CC_Magnetar, CC_OMSmolina i CC_TBlack                                                //
-// Versió: 3.9                                                                                           //
+// Versió: 3.9.1                                                                                           //
 // Creació del Document: 25/04/2015                                                                      //
 // Descripció: Aquest document serveix per definir els diferents perfils que utlitzen els jugadors del   //
 //             grup de Cavallers del Cel (http://www.cavallersdelcel.cat). Es requereixen els següents   //
@@ -61,6 +61,8 @@
 //                            casc OPS Core Ranger Green. Inclòs perfil FA M27 IAR MARPAT WD. Canviats   //
 //                            els noms dels perfils. Retocat equipament vari degut a la diferent         //
 //                            capacitat de les armilles SPC.                                             //
+//         3.9.1 (23/03/2016) Canviada la ACE_atropine per ACE_adenosine. Corregit falta d'un carregador //
+//                            a la M249 i a la M240. Corregit falta de missil al Javelin                 //
 //                                                                                                       //
 // Notes: Qualsevol canvi a aquest document ha de ser notificat a CC_Viper. No es permeten modificacions //
 //        personals d'aquest document durant les partides oficials dels Cavallers del Cel. Qualsevol     //
@@ -515,7 +517,7 @@ player addVest "rhsusf_spc_mg";
 (vestContainer player) addItemCargoGlobal ["ACE_quikclot",3];
 (vestContainer player) addItemCargoGlobal ["ACE_tourniquet",1];
 (vestContainer player) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
-(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",1];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",2];
 
 
 // Motxilla
@@ -584,7 +586,7 @@ player addVest "rhsusf_spc_mg";
 (vestContainer player) addItemCargoGlobal ["ACE_CableTie",1];
 (vestContainer player) addItemCargoGlobal ["ACE_MapTools",1];
 (vestContainer player) addItemCargoGlobal ["ACE_EarPlugs",1];
-(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
+(vestContainer player) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",3];
 
 
 // Motxilla		
@@ -741,6 +743,7 @@ player addBackpack "rhsusf_assault_eagleaiii_coy";
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",6];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_red",1];
 (unitBackpack player) addMagazineCargoGlobal ["rhs_mag_m18_green",1];
+(unitBackpack player) addMagazineCargoGlobal ["rhs_fgm148_magazine_AT",1];
 	
 // Casc
 player addHeadgear "rhsusf_opscore_rg_cover_pelt";
@@ -942,7 +945,7 @@ player forceAddUniform "rhs_uniform_FROG01_wd";
 (uniformContainer player) addItemCargoGlobal ["ACE_EarPlugs",1];
 (uniformContainer player) addItemCargoGlobal ["ACE_morphine",8];
 (uniformContainer player) addItemCargoGlobal ["ACE_epinephrine",8];
-(uniformContainer player) addItemCargoGlobal ["ACE_atropine",12];
+(uniformContainer player) addItemCargoGlobal ["ACE_adenosine",12];
 (uniformContainer player) addItemCargoGlobal ["ACE_CableTie",1];
 (uniformContainer player) addItemCargoGlobal ["ACE_key_west",1];
 (uniformContainer player) addItemCargoGlobal ["ACE_tourniquet",3];
@@ -1402,7 +1405,7 @@ player forceAddUniform "U_B_Wetsuit";
 (uniformContainer player) addItemCargoGlobal ["ACE_EarPlugs",1];
 (uniformContainer player) addItemCargoGlobal ["ACE_morphine",8];
 (uniformContainer player) addItemCargoGlobal ["ACE_epinephrine",8];
-(uniformContainer player) addItemCargoGlobal ["ACE_atropine",12];
+(uniformContainer player) addItemCargoGlobal ["ACE_adenosine",12];
 (uniformContainer player) addItemCargoGlobal ["ACE_MapTools",1];
 (uniformContainer player) addItemCargoGlobal ["ACE_key_west",1];
 (uniformContainer player) addItemCargoGlobal ["ACE_salineIV_500",1];
