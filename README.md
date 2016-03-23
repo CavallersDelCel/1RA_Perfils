@@ -28,27 +28,27 @@ Els perfils requereixen els següents mods per funcionar correctament:
 
 El següent llistat mostra els perfils suportats:
 
-| **Rol**             | **Nom del Perfil**              | 
-| ------------------- | ------------------------------- |
-| Líder d'esquadra     CC - Lider d'esquadra MARPAT WD  |
-| Líder d'equip        CC - Lider d'equip MARPAT WD     |
-| Fuseller             CC - Fuseller MARPAT WD          |
-| Fuseller AT4         CC - Fuseller AT4 MARPAT WD      |
-| Granader             CC - Granader MARPAT WD          |
-| IAR                  CC - FA M27IAR MARPAT WD         |
-| Fuseller automàtic   CC - FA M249 MARPAT WD           |
-| Metrallador          CC - Metrallador M240B MARPAT WD |
-| Antitanc (Javelin)   CC - AT Javelin MARPAT WD        |
-| Antiaèri (Stinger)   CC - AA Stinger MARPAT WD        |
-| Tirador designat     CC - Tirador MARPAT WD           |
-| Metge                CC - Metge MARPAT WD             |
-| Explosius            CC - Explosius MARPAT WD         |
-| Franctirador         CC - Franctirador MARPAT WD      |
-| Observador           CC - Observador MARPAT WD        |
-| Bussejador líder     CC - Bussejador lider            |
-| Bussejador           CC - Bussejador                  |
-| Bussejador metge     CC - Bussejador metge            |
-| Bussejador explosius CC - Bussejador explosius        |
+| **Rol**             | **Nom del Perfil**               | 
+| ------------------- | -------------------------------- |
+| Líder d'esquadra    | CC - Lider d'esquadra MARPAT WD  |
+| Líder d'equip       | CC - Lider d'equip MARPAT WD     |
+| Fuseller            | CC - Fuseller MARPAT WD          |
+| Fuseller AT4        | CC - Fuseller AT4 MARPAT WD      |
+| Granader            | CC - Granader MARPAT WD          |
+| IAR                 | CC - FA M27IAR MARPAT WD         |
+| Fuseller automàtic  | CC - FA M249 MARPAT WD           |
+| Metrallador         | CC - Metrallador M240B MARPAT WD |
+| Antitanc (Javelin)  | CC - AT Javelin MARPAT WD        |
+| Antiaèri (Stinger)  | CC - AA Stinger MARPAT WD        |
+| Tirador designat    | CC - Tirador MARPAT WD           |
+| Metge               | CC - Metge MARPAT WD             |
+| Explosius           | CC - Explosius MARPAT WD         |
+| Franctirador        | CC - Franctirador MARPAT WD      |
+| Observador          | CC - Observador MARPAT WD        |
+| Bussejador líder    | CC - Bussejador lider            |
+| Bussejador          | CC - Bussejador                  |
+| Bussejador metge    | CC - Bussejador metge            |
+| Bussejador explosius| CC - Bussejador explosius        |
 
 ### Historial de canvis:
 
